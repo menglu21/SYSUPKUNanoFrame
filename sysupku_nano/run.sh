@@ -22,7 +22,7 @@ fi
 case ${WHAT} in
 
   LOCAL)
-	python $CMSSW_BASE/src/PhysicsTools/NanoAODTools/sysupku_nano/run.py --ismc True -i /afs/cern.ch/user/z/zhyuan/work/LuMeng_workspace/Nano_dev/DYJetsToLL_M50.root --year ${YEAR} -o /afs/cern.ch/user/z/zhyuan/work/LuMeng_workspace/Nano_dev/;
+	python $CMSSW_BASE/src/PhysicsTools/NanoAODTools/sysupku_nano/run.py --ismc True -i /afs/cern.ch/work/m/melu/work/SYSUPKUNanoFrame/CMSSW_10_2_22/src/DYJetsToLL_M50.root --year ${YEAR} -o $CMSSW_BASE/src/PhysicsTools/NanoAODTools/sysupku_nano;
 	;;
 
 #  SUBMIT)
