@@ -9,6 +9,8 @@ from PhysicsTools.NanoAODTools.postprocessing.sysupku_framework.egammaRECOSFProd
 from PhysicsTools.NanoAODTools.postprocessing.sysupku_framework.eleIDSFProducer import *
 from PhysicsTools.NanoAODTools.postprocessing.sysupku_framework.photonIDSFProducer import *
 from PhysicsTools.NanoAODTools.postprocessing.sysupku_framework.muonScaleResProducer import *
+from PhysicsTools.NanoAODTools.postprocessing.sysupku_framework.muonIDISOSFProducer import *
+from PhysicsTools.NanoAODTools.postprocessing.modules.jme.jetmetUncertainties import *
 
 ### main python file to run ###
 
@@ -27,13 +29,13 @@ def main():
 
   if opt.ismc:
     if opt.year == "2016a":
-      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonScaleRes2016a(),egammaRECOSF2016(),eleIDSF2016(),photonIDSF2016()], provenance=True)
+      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonIDISOSF2016(),muonScaleRes2016a(),egammaRECOSF2016(),eleIDSF2016(),photonIDSF2016(),jetmetUncertainties2016()], provenance=True)
     if opt.year == "2016b":
-      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonScaleRes2016b(),egammaRECOSF2016(),eleIDSF2016(),photonIDSF2016()], provenance=True)
+      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonIDISOSF2016(),muonScaleRes2016b(),egammaRECOSF2016(),eleIDSF2016(),photonIDSF2016(),jetmetUncertainties2016()], provenance=True)
     if opt.year == "2017":
-      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonScaleRes2017(),egammaRECOSF2017(),eleIDSF2017(),photonIDSF2017()], provenance=True)
+      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonIDISOSF2017(),muonScaleRes2017(),egammaRECOSF2017(),eleIDSF2017(),photonIDSF2017(),jetmetUncertainties2017()], provenance=True)
     if opt.year == "2018":
-      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonScaleRes2018(),egammaRECOSF2018(),eleIDSF2018(),photonIDSF2018()], provenance=True)
+      p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonIDISOSF2018(),muonScaleRes2018(),egammaRECOSF2018(),eleIDSF2018(),photonIDSF2018(),jetmetUncertainties2018()], provenance=True)
   if not (opt.ismc):
     if opt.year == "2016a":
       p = PostProcessor(opt.output, [opt.inputs], cut="", branchsel=None, modules=[muonScaleRes2016a()], provenance=True)
