@@ -45,7 +45,16 @@ cd $CMSSW_BASE/src/PhysicsTools/NanoAODTools/sysupku_nano
 
 sh run.sh -o LOCAL
 ```
-### this command run the sample locally, the output file will be at $CMSSW_BASE/..
+### the command above run the sample locally, the output file will be at $CMSSW_BASE/..
 
 # About the JEC/JER correction
-The JECR part is using the existing module under the ``cms-nanoAOD/nanoAOD-tools``, but some modification is done and store in ``https://github.com/menglu21/nanoAOD-tools``, the module is ``nanoAOD-tools/python/postprocessing/modules/jme/jetmetUncertainties.py``
+The JECR part is using the existing module under the ``cms-nanoAOD/nanoAOD-tools``, but some modification is done and stored in ``https://github.com/menglu21/nanoAOD-tools``, the module is ``nanoAOD-tools/python/postprocessing/modules/jme/jetmetUncertainties.py``
+
+## JEC 
+The official twiki is ``https://twiki.cern.ch/twiki/bin/view/CMS/JECDataMC``
+``files used for MC``: they are stored in ``nanoAOD-tools/data/jme/``
+``2018``: Summer19UL18_V5_MC.tgz
+``2017``: Summer19UL17_V5_MC.tgz
+``2016``: Summer16_07Aug2017_V11_MC.tgz
+
+
