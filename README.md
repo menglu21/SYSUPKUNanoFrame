@@ -51,7 +51,7 @@ sh run.sh -o LOCAL
 The JECR part is using the existing module under the ``cms-nanoAOD/nanoAOD-tools``, but some modification is done and stored in ``https://github.com/menglu21/nanoAOD-tools``, the module is ``nanoAOD-tools/python/postprocessing/modules/jme/jetmetUncertainties.py``
 
 ## JEC 
-The official twiki is ``https://twiki.cern.ch/twiki/bin/view/CMS/JECDataMC``
+The official twiki is ``https://twiki.cern.ch/twiki/bin/view/CMS/JECDataMC``, the tarball files could be reached at ``https://github.com/cms-jet/JECDatabase/tree/master/tarballs``
 
 ### files used for MC: they are stored in ``nanoAOD-tools/data/jme/``
 
@@ -61,6 +61,24 @@ The official twiki is ``https://twiki.cern.ch/twiki/bin/view/CMS/JECDataMC``
 
 ``2016``: Summer16_07Aug2017_V11_MC.tgz
 
+### files used for DATA: they are stored in ``nanoAOD-tools/data/jme/``
 
+``2018``: Summer19UL18_RunA/B/C/D_V5_DATA.tgz
 
+``2017``: Summer19UL17_RunB/C/D/E/F_V6_DATA.tgz
+
+``2016``: Summer16_07Aug2017BCD/EF/GH_V11_DATA.tgz
+
+## JER
+The official twiki is https://twiki.cern.ch/twiki/bin/view/CMS/JetResolution, the JER is applied on MC, AS Measurements show that the jet energy resolution (JER) in data is worse than in the simulation and the jets in MC need to be smeared to describe the data. 
+
+the tarball files could be reached at ``https://github.com/cms-jet/JRDatabase``
+
+### files used for MC: they are stored in ``nanoAOD-tools/data/jme/``
+
+``2018``: Summer19UL18_JRV2_MC.tgz 
+
+``2017``: Summer19UL17_JRV3_MC.tgz
+
+``2016``: Summer16_25nsV1b_MC.tgz
 
