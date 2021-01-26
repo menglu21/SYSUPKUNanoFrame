@@ -53,7 +53,7 @@ The JECR part is using the existing module under the ``cms-nanoAOD/nanoAOD-tools
 ## JEC 
 The official twiki is ``https://twiki.cern.ch/twiki/bin/view/CMS/JECDataMC``
 
-``files used for MC``: they are stored in ``nanoAOD-tools/data/jme/``
+### files used for MC: they are stored in ``nanoAOD-tools/data/jme/``
 
 ``2018``: Summer19UL18_V5_MC.tgz
 
