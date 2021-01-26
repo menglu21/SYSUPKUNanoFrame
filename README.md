@@ -10,7 +10,7 @@ cmsenv
 
 git cms-init
 
-git clone https://github.com/cms-nanoAOD/nanoAOD-tools.git PhysicsTools/NanoAODTools
+git clone https://github.com/menglu21/nanoAOD-tools.git PhysicsTools/NanoAODTools
 
 scram b
 
