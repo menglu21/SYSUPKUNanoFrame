@@ -19,13 +19,12 @@ def main():
   usage = 'usage: %prog [options]'
   parser = optparse.OptionParser(usage)
   parser.add_option('--year', dest='year', help='which year sample', default='2018', type='string')
-  parser.add_option('--ismc', dest='ismc', help='to apply sf correction or not', default=True, action='store_true')
+  parser.add_option('-m', dest='ismc', help='to apply sf correction or not', default=True, action='store_true')
+  parser.add_option('-d', dest='ismc', help='to apply sf correction or not', action='store_false')
   parser.add_option('-i', '--in', dest='inputs', help='input directory with files', default=None, type='string')
   parser.add_option('-o', '--out', dest='output', help='output directory with files', default=None, type='string')
   (opt, args) = parser.parse_args()
   print 'year:', opt.year
-
-  print 'inputs:', opt.inputs
 
   if opt.ismc:
     if opt.year == "2016a":
